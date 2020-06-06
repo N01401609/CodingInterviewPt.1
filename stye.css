@@ -1,0 +1,72 @@
+/*Import Font to use*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+h1{
+    text-align: center;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Displaying the member boxes */
+#members{
+    display: grid;
+    align-items: stretch;
+    grid-gap: 1em;
+
+}
+/* Align them in one line*/
+.profile-container {
+    border: black 1px solid;
+    padding: 1rem;
+    margin: 6%;
+}
+
+/* Featured Crown*/
+.featured{
+    height: 30px;
+    text-align: right;
+    font-size: 30px;
+}
+
+/* Displaying the image */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+/*Title */
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Bio given height*/
+.bio{
+    height: 150px;
+    overflow: scroll;
+}
+
+/*Styling of roles*/
+.roles{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.individual-role{
+    flex: 1 1 20%;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+
+}
+/* Two columns if the screen is larger than*/
+@media (min-width: 600px) {
+    #members { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+    #members { grid-template-columns: repeat(3, 1fr); }
+}
