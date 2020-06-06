@@ -88,6 +88,7 @@ function pageReady(){
 
                     }
 
+                    //Creating an empty div for the featured crown
                     let featured = createNode('div');
                     let featuredclass = document.createAttribute('class');
                     featuredclass.value = 'featured';
@@ -95,13 +96,13 @@ function pageReady(){
 
                     //See if the employee is featured
                     if(employees[i].employeeisfeatured == 1){
-                        //if they are featured create the crown element
+                        //if they are featured add the crown element to the div
 
                         featured.innerHTML = '&#128081';
 
                     }
 
-                    console.log(employeeprofile);
+                    //console.log(employeeprofile);
 
                     //Appending all the elements into the main html file
                     append(employeeprofile,featured);
